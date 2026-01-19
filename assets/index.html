@@ -7,3 +7,222 @@
 
 <script src="https://cdn.tailwindcss.com"></script>
 
+
+<style>
+/* simple animation */
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+</style>
+</head>
+
+<body class="bg-gradient-to-b from-[#0f051d] via-[#1b0b33] to-[#0f051d] text-white">
+
+<!-- NAVBAR -->
+<nav class="flex justify-between items-center px-10 py-6">
+  <h1 class="text-2xl font-bold">
+    Tech<span class="text-pink-500">Wave</span>
+  </h1>
+
+  <div class="flex gap-6 text-gray-300">
+    <a href="#">About</a>
+    <a href="#">Episodes</a>
+    <a href="#">Host</a>
+  </div>
+
+  <button class="px-6 py-2 rounded-full bg-gradient-to-r from-pink-500 to-yellow-400 hover:scale-105 transition">
+    Subscribe
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="text-center py-20">
+  <div class="relative w-36 h-36 mx-auto float">
+
+  <!-- Round Image -->
+  <div class="w-full h-full rounded-full 
+              bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-400 
+              flex items-center justify-center text-5xl">
+    🎙️
+  </div>
+
+  <!-- NEW Notification Badge -->
+  <span class="absolute -top-2 -right-2 
+               px-3 py-1 text-xs font-bold 
+               rounded-full bg-green-400 text-black 
+               shadow-lg animate-pulse">
+    NEW
+  </span>
+
+</div>
+  <div class="flex justify-center items-center gap-3 mt-8"></div>
+  <h2 class="text-5xl font-bold">TechWave</h2>
+  <p class="text-gray-400 mt-4">
+    Your daily dose of tech insights & productivity hacks
+  </p>
+
+  <div class="flex justify-center gap-6 mt-8">
+    <button class="px-6 py-3 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 hover:scale-105 transition">
+      Listen on Spotify
+    </button>
+    <button class="px-6 py-3 rounded-full border border-pink-500 hover:bg-pink-500 transition">
+      Subscribe
+    </button>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="py-20 text-center">
+  <h3 class="text-3xl font-bold">About The Podcast</h3>
+  <p class="text-gray-400 max-w-3xl mx-auto mt-4">
+    TechWave helps you stay ahead in technology by breaking down complex topics into simple insights.
+  </p>
+
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12">
+    <div><h4 class="text-green-400 text-3xl font-bold">150K+</h4><p>Listeners</p></div>
+    <div><h4 class="text-green-400 text-3xl font-bold">200+</h4><p>Episodes</p></div>
+    <div><h4 class="text-green-400 text-3xl font-bold">4.9★</h4><p>Rating</p></div>
+    <div><h4 class="text-green-400 text-3xl font-bold">50+</h4><p>Experts</p></div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE -->
+
+<section class="py-28 bg-[#140824]">
+  <h2 class="text-4xl font-semibold text-center mb-20">
+    Why Choose TechWave
+  </h2>
+
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+
+    <!-- Premium Audio -->
+    <div class="relative bg-[#2b145a]/70 backdrop-blur-xl rounded-3xl p-8">
+      <div class="absolute -top-6 left-8 w-14 h-14 rounded-xl 
+                  bg-gradient-to-r from-pink-500 to-yellow-400 
+                  flex items-center justify-center shadow-lg shadow-pink-500/30">
+        🎧
+      </div>
+      <h3 class="mt-10 text-xl font-semibold">Premium Audio Quality</h3>
+      <p class="text-gray-300 text-sm mt-3 leading-relaxed">
+        Experience crystal-clear sound with professional-grade recording
+        equipment and expert audio engineering.
+      </p>
+    </div>
+
+    <!-- Mobile Friendly -->
+    <div class="relative bg-[#2b145a]/70 backdrop-blur-xl rounded-3xl p-8">
+      <div class="absolute -top-6 left-8 w-14 h-14 rounded-xl 
+                  bg-gradient-to-r from-purple-500 to-pink-500 
+                  flex items-center justify-center shadow-lg shadow-purple-500/30">
+        📱
+      </div>
+      <h3 class="mt-10 text-xl font-semibold">Mobile Friendly</h3>
+      <p class="text-gray-300 text-sm mt-3 leading-relaxed">
+        Listen on the go with seamless mobile experience and offline downloads.
+      </p>
+    </div>
+
+    <!-- Global Community -->
+    <div class="relative bg-[#2b145a]/70 backdrop-blur-xl rounded-3xl p-8">
+      <div class="absolute -top-6 left-8 w-14 h-14 rounded-xl 
+                  bg-gradient-to-r from-pink-500 to-purple-500 
+                  flex items-center justify-center shadow-lg shadow-pink-500/30">
+        🌍
+      </div>
+      <h3 class="mt-10 text-xl font-semibold">Global Community</h3>
+      <p class="text-gray-300 text-sm mt-3 leading-relaxed">
+        Connect with tech enthusiasts from over 120 countries worldwide.
+      </p>
+    </div>
+
+    <!-- Exclusive Interviews -->
+    <div class="relative bg-[#2b145a]/70 backdrop-blur-xl rounded-3xl p-8">
+      <div class="absolute -top-6 left-8 w-14 h-14 rounded-xl 
+                  bg-gradient-to-r from-yellow-400 to-pink-500 
+                  flex items-center justify-center shadow-lg shadow-yellow-400/30">
+        ⚡
+      </div>
+      <h3 class="mt-10 text-xl font-semibold">Exclusive Interviews</h3>
+      <p class="text-gray-300 text-sm mt-3 leading-relaxed">
+        Exclusive conversations with startup founders and tech visionaries.
+      </p>
+    </div>
+
+    <!-- Rich Resources (full width like image) -->
+    <div class="relative md:col-span-2 bg-[#2b145a]/70 backdrop-blur-xl rounded-3xl p-8">
+      <div class="absolute -top-6 left-8 w-14 h-14 rounded-xl 
+                  bg-gradient-to-r from-purple-500 to-blue-500 
+                  flex items-center justify-center shadow-lg shadow-purple-500/30">
+        📘
+      </div>
+      <h3 class="mt-10 text-xl font-semibold">Rich Resources</h3>
+      <p class="text-gray-300 text-sm mt-3 leading-relaxed max-w-3xl">
+        Access show notes, transcripts, and additional learning materials
+        for every episode.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- EPISODES -->
+<section class="py-20 px-10">
+  <h3 class="text-3xl font-bold text-center mb-12">Featured Episodes</h3>
+
+  <div class="grid md:grid-cols-3 gap-8">
+    <div class="bg-[#1c1033] rounded-xl hover:scale-105 transition">
+      <div class="h-36 bg-gradient-to-r from-pink-500 to-purple-600 flex items-center justify-center">▶</div>
+      <div class="p-4">
+        <h4>Future of AI</h4>
+        <p class="text-gray-400 text-sm">42 min</p>
+      </div>
+    </div>
+
+    <div class="bg-[#1c1033] rounded-xl hover:scale-105 transition">
+      <div class="h-36 bg-gradient-to-r from-purple-500 to-yellow-400 flex items-center justify-center">▶</div>
+      <div class="p-4">
+        <h4>Remote Work Habits</h4>
+        <p class="text-gray-400 text-sm">35 min</p>
+      </div>
+    </div>
+
+    <div class="bg-[#1c1033] rounded-xl hover:scale-105 transition">
+      <div class="h-36 bg-gradient-to-r from-pink-500 to-yellow-400 flex items-center justify-center">▶</div>
+      <div class="p-4">
+        <h4>Career Growth</h4>
+        <p class="text-gray-400 text-sm">51 min</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- NEW FOOTER -->
+<footer class="relative py-20 bg-gradient-to-r from-[#1a0b2e] via-[#2b145a] to-[#1a0b2e] overflow-hidden">
+
+  <div class="relative z-10 text-center">
+    <h2 class="text-5xl font-bold mb-6">
+      Tech<span class="text-pink-500">Wave</span>
+    </h2>
+
+    <div class="flex justify-center gap-8 text-gray-300 mb-8 text-sm">
+      <span>Spotify</span>
+      <span>Apple Podcasts</span>
+      <span>YouTube</span>
+      <span>Twitter</span>
+    </div>
+
+    <p class="text-gray-400 text-sm">
+      © 2026 TechWave Podcast. All rights reserved.
+    </p>
+  </div>
+
+</footer>
+</body>
+</html>
+
